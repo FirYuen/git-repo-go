@@ -263,7 +263,7 @@ func (v Project) SyncLocalHalf(o *CheckoutOptions) error {
 		}
 
 		log.Debugf("%sdetached head, force checkout: %s", v.Prompt(), revid)
-		err = v.CheckoutRevision(revid)
+		err = v.HardReset(revid)
 		if err != nil {
 			return err
 		}

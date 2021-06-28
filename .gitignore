@@ -19,3 +19,5 @@ REPO-VERSION-FILE
 /vendor
 
 .DS_Store
+.idea/
+repo

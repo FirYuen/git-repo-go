@@ -104,7 +104,7 @@ func (v *syncCommand) Command() *cobra.Command {
 	v.cmd.Flags().BoolVarP(&v.O.CurrentBranchOnly,
 		"current-branch",
 		"c",
-		false,
+		true,
 		"fetch only current branch from server")
 	v.cmd.Flags().BoolVar(&v.O.CheckPublished,
 		"check-published",
